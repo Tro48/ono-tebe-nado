@@ -27,13 +27,19 @@ blockquote {
 
 a {
   color: inherit;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 img {
   width: 100%;
 }
 
-address {
+address,
+h3 {
   all: unset;
 }
 
