@@ -136,15 +136,15 @@ h2 {
 }
 
 .button_cover {
-  all: unset;
-  grid-area: button;
-  min-width: 256px;
-  min-height: 51px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
-  z-index: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 256px;
+    min-height: 51px;
+    margin-right: 50px;
+    margin-bottom: 51px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    z-index: 1;
 }
 
 .button_cover:hover {
@@ -153,7 +153,7 @@ h2 {
 }
 
 .button_cover_text {
-  padding: 12px 31px;
+  margin: 12px 31px;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
