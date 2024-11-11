@@ -15,10 +15,10 @@
   <header class="header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item_no-bullit header__link"><a class="header__link_active" href="#">главная</a>
+        <li class="header__links-list-item_no-bullit"><a class="link_active menu__link" href="#">главная</a>
         </li>
-        <li class="header__link"><a class="header__link_active" href="#">посмотреть лоты</a></li>
-        <li class="header__link"><a class="header__link_active" href="#">об аукционе</a></li>
+        <li><a class="menu__link" href="#">посмотреть лоты</a></li>
+        <li><a class="menu__link" href="#">об аукционе</a></li>
       </ul>
     </nav>
     <a class="header__logo"><img class="header__logo-image" src="./images/logo-black.svg" alt="Logo"></a>
@@ -31,61 +31,56 @@
   <main>
     <section class="cover">
       <div class="overlay"></div>
-      <section class="text_cover_h1">
-        <h2 class="text_left"><span class="spacing_on">О Н</span> О</h2>
-        <h2 class="text_center">ТЕБ<span class="spase"> </span>Е</h2>
-        <h2 class="text_right">Н<span class="spase"> </span>АДО</h2>
-      </section>
+      <h1>
+        <span class="text_left">О<span class="letter_spacing_60">НО</span></span>
+        <span class="text_center">ТЕ<span class="letter_spacing_60">БЕ</span></span>
+        <span class="text_right"><span class="letter_spacing_60">Н</span>АД<span
+            class="letter_spacing_0">О</span></span>
+      </h1>
+
       <p class="subline">Аукцион вещей, в которые никто не верил</p>
-      <div class="button_cover"><a class="button_cover_text" href="#">Сделать ставку</a></div>
+      <button class="bet-button" name="button">Сделать ставку</button>
     </section>
-    <article class="lots">
-      <h3 class="title_lots">ЛОТЫ</h3>
+    <section class="lots">
+      <h2 class="title_lots">ЛОТЫ</h2>
       <ul class="cards">
-        <li class="card">
-          <a class="link_card" href="#"></a>
-          <div class="card_overlay"></div>
-          <section class="title_card">
-            <a class="card_name" href="#">Фильм режиссёра, который бросил киношколу
-            </a>
+        <li class="card background_card_one">
+          <div class="overlay"></div>
+          <article class="title_card">
+            <h3><a class="card_name" href="#">Фильм режиссёра, который бросил киношколу
+              </a></h3>
             <p class="card_paragraph">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
               знали, что
               режиссёр — Пол Томас
               Андерсон?</p>
-          </section>
-          <img class="pictures" src="./images/card-lot-01.jpg" alt="Film">
+          </article>
         </li>
-        <li class="card">
-          <a class="link_card" href="#"></a>
-          <div class="card_overlay"></div>
-          <section class="title_card">
-            <a class="card_name" href="#">Книга, где описан один скучный день из жизни рекламного агента
-            </a>
+        <li class="card background_card_two">
+          <div class="overlay"></div>
+          <article class="title_card">
+            <h3><a class="card_name" href="#">Книга, где описан один скучный день из жизни рекламного агента
+              </a></h3>
             <p class="card_paragraph">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
               древнеанглийский. В ней одновременно
               рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё
               накладывается на
               эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-          </section>
-          <img class="pictures" src="./images/card-lot-02.jpg" alt="Film">
+          </article>
         </li>
-        <li class="card">
-          <a class="link_card" href="#"></a>
-          <div class="card_overlay"></div>
-          <section class="title_card">
-            <a class="card_name" href="#">Картина, которую повторит даже 5-летний сын маминой подруги
-            </a>
+        <li class="card background_card_three">
+          <div class="overlay"></div>
+          <article class="title_card">
+            <h3><a class="card_name" href="#">Картина, которую повторит даже 5-летний сын маминой подруги
+              </a></h3>
             <p class="card_paragraph">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
               инфузорию-туфельку. Никаких полей, лесов,
               котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ
-              Кандинского?
-            </p>
-          </section>
-          <img class="pictures" src="./images/card-lot-03.jpg" alt="Film">
+              Кандинского?</p>
+          </article>
         </li>
       </ul>
       <a class="more" href="#">посмотреть больше</a>
-    </article>
+    </section>
     <section class="about">
       <section class="logo_about">
         <div class="logo_background">
@@ -93,25 +88,23 @@
         </div>
       </section>
       <section class="info_about">
-        <h3 class="title_about">Об аукционе</h3>
-
-        <p class="paragraph_one paragraph_all">Здесь вы не встретите очередное пафосное собрание невероятно дорогого
-          антиквариата. <span class="letter_spacing_one">Наши</span> лоты вообще не должны
-          <span class="letter_spacing_two">были попасть </span>ни на один аукцион. Потому что кому нужен <span
-            class="letter_spacing_three">дневник</span> девочки-подростка или картина, которую может <span
-            class="letter_spacing_one">нарисовать</span> даже
-          ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-        </p>
-
-        <p class="paragraph_all">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах
-          растерзанные критиками. Непринятые
-          и непонятые. Когда-то <span class="letter_spacing_fou">они</span> казались просто <span
-            class="letter_spacing_two">неудачными.</span> Но, несмотря
-          на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно <span
-            class="letter_spacing_two">представить современную культуру.</span>Когда в
-          эти вещи не верил никто, продолжали верить <span class="letter_spacing_two">их создатели.</span> И сейчас эти
-          лоты стали культовыми.
-        </p>
+        <h2 class="title_about">Об аукционе</h2>
+        <div class="paragraph_text">
+          <p class="paragraph_all">Здесь вы не встретите очередное пафосное собрание невероятно дорогого
+            антиквариата. Наши лоты вообще не должны
+            были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может
+            нарисовать даже
+            ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          </p>
+          <p class="paragraph_all">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах
+            растерзанные критиками. Непринятые
+            и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную
+            культуру. Когда в
+            эти вещи не верил никто, продолжали верить их создатели. И сейчас эти
+            лоты стали культовыми.
+          </p>
+        </div>
       </section>
     </section>
   </main>
@@ -123,11 +116,11 @@
     </address>
     <nav class="footer__menu">
       <ul class="footer__links-list">
-        <li class="footer__link">
-          <a class="footer__link_active" href="#">главная</a>
+        <li>
+          <a class="link_active menu__link" href="#">главная</a>
         </li>
-        <li class="footer__link"><a class="footer__link_active" href="#">посмотреть лоты</a></li>
-        <li class="footer__link"><a class="footer__link_active" href="#">об аукционе</a></li>
+        <li><a href="#">посмотреть лоты</a></li>
+        <li><a href="#">об аукционе</a></li>
       </ul>
     </nav>
     <section class="footer__social-block">
