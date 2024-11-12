@@ -101,11 +101,11 @@
   letter-spacing: 30px;
 }
 
-.letter_spacing_60 {
+.letter_spacing_text_cover {
   letter-spacing: 60px;
 }
 
-.letter_spacing_0 {
+.letter_spacing_text_cover_end {
   letter-spacing: normal;
 }
 
@@ -187,11 +187,16 @@
   background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 
+.card_link {
+  display: flex;
+  text-decoration: none;
+  max-width: 334px;
+}
+
 .title_card {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 334px;
   padding: 50px 40px;
   z-index: 2;
 }
